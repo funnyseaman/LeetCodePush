@@ -4,9 +4,20 @@ import util.PrettyFormat;
 
 public class InsertionSort {
     public static void sort(int[] a) {
-        int[] res;
-        for (int i = 0; i < a.length; i++) {
-
+        for (int i = 1; i < a.length; i++) {
+            int temp = a[i];
+            // 寻找需要插入的位置
+            int j = i - 1;
+            for (; j >= 0; j--) {
+                if (temp < a[j]) {
+                    // 移动数据
+                    a[j + 1] = a[j];
+                } else {
+                    break;
+                }
+            }
+            // 因为在找到插入位置后j自减1，这里要加回来
+            a[j + 1] = temp;
         }
     }
 
