@@ -9,7 +9,19 @@ public class MergeSort {
     }
 
     private static void assistSort(int[] arr, int[] result, int start, int end) {
+        if (arr.length == 1) {
+            return;
+        }
+        int mid = (start + end) / 2;
+        assistSort(arr, result, start, mid);
+        assistSort(arr, result, mid + 1, end);
 
+
+    }
+
+    private static void merge(int[] arr, int[] result, int start, int mid, int end) {
+        int min = Math.min(mid - start, end - (mid + 1));
+        for()
     }
 
 
