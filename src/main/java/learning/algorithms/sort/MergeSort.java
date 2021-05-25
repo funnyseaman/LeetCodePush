@@ -26,7 +26,9 @@ public class MergeSort {
     // 合并数组
     private static void merge(int[] arr, int start, int mid, int end) {
         // 把范围内的arr复制到assistArr中
-        if (end + 1 - start >= 0) System.arraycopy(arr, start, assistArr, start, end + 1 - start);
+        if (end + 1 - start >= 0) {
+            System.arraycopy(arr, start, assistArr, start, end + 1 - start);
+        }
         int result_current = start;
         int left = start;
         int right = mid + 1;
