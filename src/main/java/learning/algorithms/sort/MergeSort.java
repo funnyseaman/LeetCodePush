@@ -9,17 +9,17 @@ public class MergeSort {
     // 归并排序
     public static void sort(int[] arr) {
         assistArr = new int[arr.length];
-        assistSort(arr, 0, arr.length - 1);
+        recursionSort(arr, 0, arr.length - 1);
     }
 
     // 递归过程
-    private static void assistSort(int[] arr, int start, int end) {
+    private static void recursionSort(int[] arr, int start, int end) {
         if (end - start < 1) {
             return;
         }
         int mid = (start + end) / 2;
-        assistSort(arr, start, mid);
-        assistSort(arr, mid + 1, end);
+        recursionSort(arr, start, mid);
+        recursionSort(arr, mid + 1, end);
         merge(arr, start, mid, end);
     }
 
