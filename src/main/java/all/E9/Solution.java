@@ -1,4 +1,4 @@
-package p9;
+package all.E9;
 
 public class Solution {
     public boolean isPalindrome(int x) {

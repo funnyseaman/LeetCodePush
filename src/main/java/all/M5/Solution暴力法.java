@@ -1,4 +1,4 @@
-package p5;
+package all.M5;
 
 public class Solution暴力法 {
     public String longestPalindrome(String s) {
