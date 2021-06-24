@@ -1,4 +1,4 @@
-package jianzhi.E15;
+package jianzhi.p15;
 
 import org.junit.Test;
 

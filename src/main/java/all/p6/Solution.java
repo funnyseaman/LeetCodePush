@@ -1,4 +1,4 @@
-package all.M6;
+package all.p6;
 
 class Solution {
     public String convert(String s, int numRows) {
