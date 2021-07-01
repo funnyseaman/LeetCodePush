@@ -1,5 +1,7 @@
 package bean;
 
+import org.junit.Test;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -30,4 +32,16 @@ public class ListNode {
     public String toString() {
         return val + "->" + next;
     }
+
+    public static ListNode createFromArrays(int[] values) {
+        ListNode root = new ListNode();
+        ListNode curr = root;
+        for (int val : values) {
+            ListNode temp = new ListNode(val);
+            curr.next = temp;
+            curr = curr.next;
+        }
+        return root.next;
+    }
+
 }
