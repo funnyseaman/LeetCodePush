@@ -60,23 +60,23 @@ public class MergeSort {
     @Test
     public void testSort() {
         int[] a = new int[]{6, 2, 7, 3, 5, 8, 1, 3};
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
         MergeSort.sort(a);
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
 
         a = new int[]{6, 2, 7, 3, 5, 8, 1};
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
         MergeSort.sort(a);
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
 
         a = new int[]{1, 5, 3, 7, 9};
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
         MergeSort.sort(a);
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
 
         a = new int[]{};
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
         MergeSort.sort(a);
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
     }
 }

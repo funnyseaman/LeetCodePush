@@ -50,27 +50,27 @@ public class CountingSort {
     @Test
     public void testSort() {
         int[] a = new int[]{6, 2, 7, 3, 5, 8, 1, 3};
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
         CountingSort.sort(a);
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
         System.out.println();
 
         a = new int[]{1, 5, 3, 7, 9};
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
         CountingSort.sort(a);
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
         System.out.println();
 
         a = new int[]{1};
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
         CountingSort.sort(a);
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
         System.out.println();
 
         a = new int[]{};
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
         CountingSort.sort(a);
-        PrettyFormat.print(a);
+        PrettyFormat.printArray(a);
     }
 
 }
