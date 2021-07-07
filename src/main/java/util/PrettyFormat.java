@@ -20,7 +20,7 @@ public class PrettyFormat {
             sb.deleteCharAt(sb.length() - 1);
         }
         sb.append("]");
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 
     public static void print(int[] a) {
@@ -34,6 +34,6 @@ public class PrettyFormat {
             sb.deleteCharAt(sb.length() - 1);
         }
         sb.append("]");
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 }
