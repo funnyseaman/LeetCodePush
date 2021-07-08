@@ -10,7 +10,7 @@ public class Solution {
     }
 
     private TreeNode buildTreeRecursion(int[] preorder, int preL, int preR, int[] inorder, int inL, int inR) {
-        if (preL > preR || inL > inR || preL >= preorder.length) {
+        if (preL > preR) {
             return null;
         }
         TreeNode root = new TreeNode(preorder[preL]);
@@ -21,15 +21,16 @@ public class Solution {
                 break;
             }
         }
-        root.left = buildTreeRecursion(preorder, preL + 1, preL + (index - inL), inorder, 0, index - 1);
-        root.right = buildTreeRecursion(preorder, index + 1, preR, inorder, index + 1, inR);
+        root.left = buildTreeRecursion(preorder, preL + 1, preL + (index - inL), inorder, inL, index - 1);
+        root.right = buildTreeRecursion(preorder, preL + (index - inL) + 1, preR, inorder, index + 1, inR);
         return root;
     }
 
     @Test
     public void test() {
-//        TreeNode root = buildTree(new int[]{1, 2, 3}, new int[]{3, 2, 1});
-        TreeNode root = buildTree(new int[]{3, 9, 20, 15, 7}, new int[]{9, 3, 15, 20, 7});
+//        TreeNode root = buildTree(new int[]{1, 2, 3}, new int[]{2, 3, 1});
+        TreeNode root = buildTree(new int[]{1, 2, 3}, new int[]{3, 2, 1});
+//        TreeNode root = buildTree(new int[]{3, 9, 20, 15, 7}, new int[]{9, 3, 15, 20, 7});
         root.toLevelString();
     }
 }
