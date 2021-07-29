@@ -3,7 +3,7 @@ package all.p25;
 import bean.ListNode;
 import org.junit.Test;
 
-public class Solution {
+public class Solution1 {
     /*
         每次K个节点翻转的步骤：
         1）记录起始节点startNode和起始节点前一个节点prevNode，向后数k个节点记为endNode
