@@ -1,4 +1,4 @@
-package learning.thread;
+package learning.designpattern.singleton;
 
 public class Singleton {
     // 1）volatile禁止JVM指令重排优化
@@ -8,7 +8,7 @@ public class Singleton {
     private Singleton() {
     }
 
-    public  static Singleton getUniqueInstance() {
+    public static Singleton getUniqueInstance() {
         // 先判断对象是否已经实例过，没有实例化过才进入加锁代码
         // 此处主要是为了提高效率
         if (uniqueInstance == null) {
