@@ -1,10 +1,10 @@
-package exam;
+package offer.tianyiyun;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main3 {
+public class Main_3_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

@@ -1,8 +1,8 @@
-package exam;
+package offer.tianyiyun;
 
 import java.util.Scanner;
 
-public class Main2 {
+public class Main_2_1 {
     // 1,5,10,20,50,100
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
